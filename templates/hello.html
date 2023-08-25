@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantIdentification</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="static\css\style.css">
+    <script src="https://kit.fontawesome.com/bc100b5349.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:azure;">
+
+
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#identify">Identify</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="headertext">
+                <h3>PLANTICS <i class="fa-brands fa-pagelines"></i></h3>
+                    <h3>Welcome to our<span> Plant Identification</span> website! <i class="fa-solid fa-leaf"></i> </h3>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------about---------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="static\images\about.jpg" alt="Error loading image">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle">About Us</h1>
+                    <br>
+                    <p>Hello reader!<br>Our major objective behind creating this website is to facilitate the science of
+                        discovering, identifying,
+                        describing, classifying, and naming plants by using their images.</p>
+                    <p>We have created this Plant Identification system that classifies different species of plants,
+                        using digital image processing techniques and helps the user to identify the plant being
+                        searched.</p>
+                    <p>Here, Image processing is done to enhance an existing image or to sift out important
+                        information from it. Its main importance lies in dramatically boosting the performance of our
+                        model.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------identify---------------------------------------------------------------- -->
+    <div id="identify">
+        <div class="container">
+            <h1 class="subtitle">Identification of Plant</h1>
+            <div class="row">
+                <div class="identifycol1">
+                    <br>
+                    <div class="formcontrol">
+                         <p>Please upload the Image of Plant you want to identify</p>
+                        <br><br>
+                        <form method="POST" action="/output" enctype="multipart/form-data">
+                            <input class = "form-control" type ="file" name = "imagefile" accept=".jpg,.png">
+                            <button class = "btn" type="submit" style="
+                                background-color: rgb(181, 245, 190); /* set the background color */
+                                color: black; /* set the text color */
+                                padding: 19px 19px; /* set the padding (top/bottom, left/right) */
+                                border: none; /* remove the border */
+                                border-radius: 8px; /* round the corners */
+                                font-size: 20px; /* set the font size */
+                                width: 100%;
+                                cursor: pointer; /* add a cursor on hover */">Predict image</button>
+                             <!-- <button onclick=output(document.form1.imagefile.value)>Predict</button> -->
+                        </form> 
+                            
+
+                          
+                       
+                       
+                    </div>
+                    
+                </div>
+                
+                <div class="identifycol2">
+                    <img src="static\images\identify.png" alt="Error loading image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

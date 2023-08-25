@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\style.css">
+    <title>Prediction</title>
+</head>
+<style>
+  
+
+
+.contactleft {
+    flex-basis: 38%;
+    padding-top: 40px;
+     margin-top: 30px;
+    padding-left: 50px;
+    width: 30%;
+  float: left;
+
+}
+
+.contactleft p {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+.contactright {
+    margin-top: 70px;
+    flex-basis: 55%;
+    
+    
+    margin-right: 82px;
+
+    width: 70%;
+  float: right;
+  text-align: justify;
+}
+
+h2{
+    height: 60;
+    width: 500;
+    padding-top: 20px;
+    font-weight: normal;
+}
+h3{
+    font-weight: normal;
+}
+img {
+  border: 2px solid black;
+  
+}
+p{
+    font-size: 13px;
+}
+</style>
+<body>
+    <div class="row">
+        <div  class="contactleft">
+            <img src="{{image_path}}" height="400px" width="400px">
+            <h2><b>Image is mostly likely to be : </b><i>{{ prediction_text }}</i></h2>
+        </div>
+        <div class="contactright">
+            <h3><b>Scientific  Name:  </b>   <i>{{name}}</i></h3><br>
+            <p>{{descrition}}</p><br>
+            <h4><b>Benefits:</b></h4><p>{{benefit}}</p><br>
+            <h4><b>Side Effects:</b></h4><p>{{seffect}}</p><br>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
